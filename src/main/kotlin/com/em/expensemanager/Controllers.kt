@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/expenses")
 class Controllers(@Autowired val repo: Repo) {
     @GetMapping()
-    fun getCount(): String {
-        return "Total expenses: " + repo.findAll().count()
+    fun returnExpenses(): List<Expense> {
+        return repo.findAll()
     }
 
     @GetMapping("/{id}")
