@@ -7,7 +7,7 @@ The goal of this application is to serve as a better way to control and view you
 ## Current Functionalities
 At the moment, the application has the following functionalities:
 
-1. View total expenses count
+1. View current expenses
 2. View expense by ID
 
 ## Future functionalities
