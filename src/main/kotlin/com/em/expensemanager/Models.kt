@@ -25,9 +25,6 @@ data class Expense(
     @field:JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm")
     val updatedAt: LocalDateTime = LocalDateTime.now()
 ) {
-    val formattedAmount: String
-        get() = "R$ $amount"
-
     override fun toString(): String {
         return "Expense(description='$description', amount=R$ $amount, place=$place, " +
                 "createdAt=$createdAt, updatedAt=$updatedAt)"
